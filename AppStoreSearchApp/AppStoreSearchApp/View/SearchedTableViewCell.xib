@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchedTableViewCell" id="hzs-96-ua3" customClass="SearchedTableViewCell" customModule="AppStoreSearchApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hzs-96-ua3" id="rYy-ik-VoO">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5PF-UF-br5">
+                        <rect key="frame" x="0.0" y="15.5" width="15" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="ctU-Cg-B4x"/>
+                            <constraint firstAttribute="height" constant="15" id="dPj-TF-e2m"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A7e-ru-1dH">
+                        <rect key="frame" x="20" y="11.5" width="394" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5PF-UF-br5" firstAttribute="centerY" secondItem="rYy-ik-VoO" secondAttribute="centerY" id="6HP-2y-EPO"/>
+                    <constraint firstItem="A7e-ru-1dH" firstAttribute="leading" secondItem="5PF-UF-br5" secondAttribute="trailing" constant="5" id="7jx-Ab-HGB"/>
+                    <constraint firstAttribute="trailing" secondItem="A7e-ru-1dH" secondAttribute="trailing" id="PWJ-mp-1T6"/>
+                    <constraint firstItem="A7e-ru-1dH" firstAttribute="centerY" secondItem="rYy-ik-VoO" secondAttribute="centerY" id="erA-XE-0Db"/>
+                    <constraint firstItem="5PF-UF-br5" firstAttribute="leading" secondItem="rYy-ik-VoO" secondAttribute="leading" id="nbg-Mw-BMN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="titleLabel" destination="A7e-ru-1dH" id="nsR-86-wrM"/>
+            </connections>
+            <point key="canvasLocation" x="85.507246376811594" y="56.919642857142854"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
